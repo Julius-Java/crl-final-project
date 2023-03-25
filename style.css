@@ -237,8 +237,6 @@ img {
     padding: 2em 0;
     color: white;
     text-align: center;
-    display: flex;
-    gap: 1rem;
 }
 
 .main__side h4 {
@@ -356,6 +354,11 @@ img {
 
     .feature h2, .main__content h3 {
         font-size: 30px;
+    }
+
+    .main__side {
+        display: flex;
+        gap: 1rem;
     }
 
     .main__content p {
