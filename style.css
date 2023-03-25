@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    background-color: #2E323F;
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    /* For nav-toggle positioning */
+    position: relative;
+}
+
+.logo {
+    height: 30px;
+}
+
+.nav {
+    color: #FFFFFF;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    border: 0;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #072A2D;
+    color: white;
+    transition: opacity 250ms ease;
+    
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    background-color: #A59678;
+    padding: .55em 2em;
+    border-radius: 100px;
+    font-size: 18px;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 50%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.nav__list {
+    list-style: none;
+}
+
+.nav__link {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+    opacity: .65;
+}
+
+.nav__item + .nav__item {
+    margin-top: 0.85em;
+}
+
+.nav {
+    margin-top: 1em;
+}
+
+.nav__list--primary {
+    margin-bottom: 1em;
+}
+
+.nav__link--button {
+    background-color: #A59678;
+    padding: .25em .75em;
+    border-radius: 100px;
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.hero {
+    background-color: #3B4050;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.hero__heading {
+    font-size: 45px;
+    line-height: 1.1;
+}
+
+.gold {
+    color: #A59678;
+}
+
+.hero__text {
+    margin-bottom: 2em;
+}
+
+
+.hero__cta p {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    margin-bottom: 1.3em;
+}
+
+.features {
+    padding: 4em 0;
+    text-align: center;
+    background-color: rgba(165, 150, 120, .2);
+}
+
+.feature + .feature {
+    margin-top: 1em;
+}
+
+.feature h2 {
+    font-size: 25px;
+    color: #A59678;
+}
+
+.feature p {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: .8em;
+    line-height: 1.4;
+    color: #6F737F;
+}
+
+.main__content {
+    padding: 3em 0;
+}
+
+.main__content h3 {
+    color: #A59678;
+    font-size: 27px;
+    line-height: 1.1;
+    margin-bottom: 0.8em;
+}
+
+.main__content p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.4;
+    color: #6F737F;
+}
+
+.wireframe {
+    margin: 1em 0;
+    width: 100%;
+}
+
+.main__side {
+    padding: 2em 0;
+    color: white;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.main__side h4 {
+    font-size: 30px;
+    margin-bottom: .5em;
+}
+
+.main__side p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main__side__col {
+    padding: 2em 1em;
+    background-color: #2E323F;
+}
+
+.main__side__col + .main__side__col {
+    margin-top: 0.9em;
+}
+
+.footer {
+    padding: 3em 0;
+    background-color: #3B4050;
+    color: #6F737F;
+}
+
+.footer p, .footerNav__link {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer h5 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.col {
+    margin-bottom: 1em;
+}
+
+.col h6 {
+    font-size: 21px;
+    color: #A59678;
+    margin-bottom: 0.6em;
+}
+
+.footerNav {
+    font-size: 16px;
+    list-style: none;
+}
+
+.footerNav__link {
+    color: #6F737F;
+    text-decoration: none;
+}
+
+.footerNav__link:focus,
+.footerNav__link:hover {
+    opacity: .6;
+}
+
+.footerNav__item + .footerNav__item {
+    margin-top: 1em;
+}
+
+@media (min-width: 700px) {
+    header {
+        text-align: left;
+    }
+
+    .header__row {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        height: auto;
+        position: relative;
+        display: flex;
+        margin: 0;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__list--primary {
+        margin: 0 auto;
+    }
+
+    .nav__item + .nav__item {
+        margin: 0;
+        margin-left: 1em;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero__heading {
+        font-size: 65px;
+    }
+
+    .hero__cta p, .btn {
+        font-size: 20px;
+    }
+
+    .feature h2, .main__content h3 {
+        font-size: 30px;
+    }
+
+    .main__content p {
+        font-size: 21px;
+    }
+
+    .main__side__col + .main__side__col {
+        margin-top: 0;
+    }
+
+    .footer__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1000px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero {
+        text-align: left;
+    }
+
+    .hero__text {
+        margin: 0;
+        width: 45%;
+    }
+
+    .hero__cta {
+        align-self: flex-end;
+        width: 45%;
+    }
+
+    .hero {
+        padding: 3.5em 0;
+    }
+
+    .hero__heading {
+        font-size: 90px;
+    }
+
+    .hero__cta p, .btn {
+        font-size: 24px;
+    }
+
+    .feature + .feature {
+        margin: 0;
+    }
+
+    .feature {
+        width: 30%;
+    }
+
+    .main__content h3 {
+        font-size: 36px;
+    }
+
+    .main__content, .main__side {
+        padding: 4em 0;
+    }
+
+    .main__content {
+        width: 55%;
+    }
+
+    .main__side {
+        flex-direction: column;
+        width: 35%;
+    }
+
+    .main__side__col {
+        padding: 2em 1.5em
+    }
+
+    .footer__row {
+        flex-wrap: nowrap;
+    }
+
+    .col {
+        width: 15%;
+    }
+
+    .col:first-child {
+        width: 40%;
+    }
+}
+
