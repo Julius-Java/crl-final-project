@@ -3,6 +3,8 @@
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif; */
 
+/* ==== GENERAL STYLING ==== */
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -39,7 +41,9 @@ img {
     /* For nav-toggle positioning */
     position: relative;
 }
+/* ==== GENERAL STYLING */
 
+/* ==== SPECIFIC STYLING */
 .logo {
     height: 30px;
 }
@@ -302,7 +306,9 @@ img {
 .footerNav__item + .footerNav__item {
     margin-top: 1em;
 }
+/* ==== SPECIFIC STYLING ==== */
 
+/* Medium Screen break point */
 @media (min-width: 700px) {
     header {
         text-align: left;
@@ -376,6 +382,7 @@ img {
     }
 }
 
+/* Big Screen break point */
 @media (min-width: 1000px) {
     .row {
         display: flex;
